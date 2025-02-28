@@ -1,0 +1,65 @@
+
+@media only screen and (max-width: 768px) {
+    .snake-move button {
+        display: flex;
+    }
+    .container{
+        background-color: skyblue;
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .board{
+        background-color: black;
+        width: 90vmin;
+        height: 92vmin;
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns:repeat(18,1fr) ;
+        grid-template-rows:repeat(18,1fr) ;
+    }
+
+    .btn{
+        font-size: 19px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px 15px;
+        position:absolute;
+        top: 19.6%;
+        left: 88%;
+        transform: translate(-70%, -50%);
+        background-color:  rgba(0, 128, 0, 0.89);
+        color: white;
+    }
+    
+    .score{
+        font-size: 20px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px 15px;
+        position:absolute;
+        top: 17.6%;
+        left: 16%;
+        transform: translate(-50%, -50%);
+    }
+    .hiScore{
+        font-size: 20px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px 15px;
+        position:absolute;
+        top: 17.6%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
