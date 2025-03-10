@@ -60,18 +60,19 @@ function isCollide(snake){
 function gameEngine(){
          // Part 1: Updating the snake array & food
 if(isPlaying === true){
+// musicSound.play();
+
 
          if(isCollide(snakeArr)){
-            gameOverSound.play();
-            musicSound.pause();
-            inputDirection = {x:0, y:0};
-            tryAgain.style.display="block";
+             gameOverSound.play();
+             inputDirection = {x:0, y:0};
+             tryAgain.style.display="block";
             popup.style.display="block";
             board.style.opacity="0.9";
             // alert("Game over press any key to play again!");
             yourScore.innerText=`YOUR SCORE: ${score}`;
-            snakeArr = [{x:13, y:15}];
-            musicSound.play();
+            // snakeArr = [{x:13, y:15}];
+            snakeArr= snakeArr.length;
             score = 0;
          }
 
@@ -80,6 +81,8 @@ if(isPlaying === true){
             popup.style.display="none";
             board.style.opacity="1";
             scoreBox.innerHTML= `Score: ${score}`;
+            snakeArr = [{x:13, y:15}];
+
          })
 
          //if you have eaten the food, increment the score and regenerate the food
@@ -158,7 +161,7 @@ function pauseGame(){
 
 //Main logic start here
 
-musicSound.play();
+// musicSound.play();
 
 let hiScore = localStorage.getItem("hiscore");
 if(hiScore === null){

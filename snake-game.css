@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .board{
     width: 80vmin;
@@ -20,8 +19,8 @@
     height: 92vmin; */
     border: 2px solid red;
     display: grid;
-    grid-template-columns:repeat(18,1fr) ;
-    grid-template-rows:repeat(18,1fr) ;
+    grid-template-columns:repeat(18,1fr);
+    grid-template-rows:repeat(18,1fr);
 }
 .head{
     background:url(./snakehead.png);
